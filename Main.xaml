@@ -1,0 +1,198 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="892.0000000000001,1363.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="483.2,1340" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: WhatsApp" sap:VirtualizedContainerService.HintSize="449.6,1256.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="ba5defd1-a652-4af6-b6ee-1b907d878643" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,942.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,176" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Bot will type to search contacts&quot;]" />
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Chats'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="ba5defd1-a652-4af6-b6ee-1b907d878643" Text="sudershan SVR" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="b211ca98-d2a7-42b4-a00b-8abf581ef71a" CvTextArea="133, 148, 202, 17" CvTextArgument="Search or start a new chat" CvType="Text" DesignTimeRectangle="95, 139, 425, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;uia automationid='SearchQueryTextBox' cls='TextBox' name='Search or start a new chat' /&gt;" FuzzySelectorArgument="&lt;uia automationid='SearchQueryTextBox' cls='TextBox' name='Search or start a new chat' role='edit' /&gt;" Guid="4b916e91-65c9-4fb1-89f0-e1e51419e17d" InformativeScreenshot="265a6b0ca2db343a557110c4631791bf.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="b211ca98-d2a7-42b4-a00b-8abf581ef71a" CvTextArea="96, 87, 65, 22" CvTextArgument="Chats" CvType="Text" DesignTimeRectangle="98, 86, 330, 35" ElementType="Text" FullSelectorArgument="&lt;uia automationid='LeftPanelTitleText' cls='TextBlock' name='Chats' /&gt;" FuzzySelectorArgument="&lt;uia automationid='LeftPanelTitleText' cls='TextBlock' name='Chats' role='text' check:fulltext='Chats' /&gt;" Guid="fe8616b2-bba1-4d96-934e-bc94436dfad4" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'list item  Sudershan SVR'" sap:VirtualizedContainerService.HintSize="382.4,139.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="042364b1-aa10-44f1-92aa-24f8a37521cc" InformativeScreenshot="8595eb8f367c811be080900987e2645b" Selector="&lt;uia automationid='ChatList' cls='ListView' name='Chats list' /&gt;&lt;uia cls='ListViewHeaderItem' idx='2' /&gt;&lt;uia automationid='View' cls='NamedContainerAutomationPeer' name='Sudershan SVR https://youtu.be/nMKgwUYWADk?si=8vGcmtCg685AiEJ3' /&gt;&lt;uia name='Sudershan SVR https://youtu.be/nMKgwUYWADk?si=8vGcmtCg685AiEJ3' role='list item' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into '‎14‎:‎39 '" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,279.2" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="ba5defd1-a652-4af6-b6ee-1b907d878643" Text="hi this is whatsapp web bot[k(Enter)]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="84c12a7e-0a3f-4cbb-9e86-22c3d09c3e71" CvTextArea="678, 986, 124, 22" CvTextArgument="[Type a message" CvType="Text" DesignTimeRectangle="666, 972, 1198, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;uia automationid='InputBarTextBox' cls='RichEditBox' name='Type to Sudershan SVR' /&gt;" FuzzySelectorArgument="&lt;uia automationid='InputBarTextBox' cls='RichEditBox' name='Type to Sudershan SVR' role='edit' /&gt;" Guid="eadcf37b-adde-4782-ae9a-683e306e68e0" InformativeScreenshot="6a0c0831865c9ca396d765d5356652c1.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="84c12a7e-0a3f-4cbb-9e86-22c3d09c3e71" CvTextArea="1816, 940, 31, 13" CvTextArgument="14:39" CvType="Text" DesignTimeRectangle="1818, 938, 55, 17" ElementType="Text" FullSelectorArgument="&lt;uia automationid='MessagesList' cls='ListView' name='Messages' /&gt;&lt;uia automationid='TextBlock' cls='TextBlock' name='‎14‎:‎39 ' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MessagesList' cls='ListView' name='Messages' /&gt;&lt;uia automationid='TextBlock' cls='TextBlock' name='‎14‎:‎39 ' role='text' check:fulltext='‎14‎:‎39 ' /&gt;" Guid="54c7eeb1-5f84-4a0b-88d5-ce818bcd4f72" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" Arguments="whatsapp bot" FilePath="5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAqFBMVEUAAAAgz3Akz2gl02Uj02cm02Yl1GYl1GYl02Ul02Yl02ck02gl0mUl0mcl1Gcm1GYgz2gl02Uj0mYn02coz2gm1Gkl0mYl0mUk02Uk02Qk02cl1GYgz2Alz2Ul0mYl0mYl1GUn0WYk02Yk0WYk1GYl02Yl0mQk0WYj0mMk02Ym02cj0WUj0mUj1Wck1GYl0WYj02Um0mcl02Yl1GUm1WYm02Yl0mgk02bOtTm3AAAAOHRSTlMAEEBvkK/P3+//v0Bgn59fIL9QbyBfj++/QL+PEDCg3zBwgHBw76CAUK+vkGBPz6CQsM+ff39gz/VWmMYAAAQaSURBVHgBrZnpYqs4DIXlshgRErIwQ6Ek3And973v/2Szz8hxDsXm8v25S4sU6UiKbMgNdRKEUawT/pNEp1EYzBRNhcrmmgHxIl9OYD1Y8TekP+njZMWDROvxH16zEzqnMWwSFqZ3caJZmN5FEbE3Cw+5f8HZmSoI9SsDytMwyKq/yYKwLhlw1jilRx8bn2dH8W+zXcs22iFN28S2HlbUQ7UrbQ8/BtPPh7SB+n6M2GHkA8VvmXfQzXbxm7v9ck9OdO2wB5SfU+fCLnZuWdqyQXlOHnQHav9wqM/WcwwXLQsX8GGlzfQo8qRIWdCo48z+vaQRXLJwBqoN2R/vIQcCYPv+HrAMOyP/NBpDhwgkSOpnLI1RSzMykQSVYn8EhfSD7gngoL+yKE3TyMdlh0eGBLAgQa3+FazxlcF+LIMCqJj/5WpckjoQwDnsPK8Q9scqXEsAWBfuyIP2qJBuYP9pFlLyILMfK3oDEGbjQmgsU7lVDcItedBZqU2Rlg0LvjI35UGOCtgDFQu+lUp3BznKYKIztkIgD+TT3ZtztAV5FB7Ig/9zNCeiR5Ah4GBOHjwZvdaAGgIp4nxcKzRGvrZ4hRnzLVEYunZYxqZEAfiL0ElJ1WDs+lQpfvpZBtEzbkf52ahOeBFfHfXm6JE8kY/3Slp64pA9mET+ZaRFjhmYKPIzTyopHWzECiEe7YCBA7TknE3rAEzU2YQOhA7smr4OgMi423QzTmRQpnjJ4bgZV6aPoNGwDLFHlq5kAIFRAWoVXhS8sd4sh0aF/DUdPrboNRm8g1scMOzMcQ15ZYMP+f81uigC41qy3BNt8wovheTMBVxsjeJv2C4jeAQW0pnYt12gr0yp0zm5eeA4l9UeHjdkU3mVDQCIIB5e+RCdsM0rPJEt0OIFaCIeoobdk8sWCjtB2Ps42EnhgOV3cGXGPKOvqhpt28NSAyS/4DzQ4KOtX5paErTdWqnrelXU3McVCuDlSHTtdwMoXKIAZCNvPTbE63rA/gakrfM6Thb2lW95ju+FclBXL+REZfgo98qaEkD30n/JrYJ5Xdfz8Fr13bzmeJ3/OYoEBnBtTteRiACgXq6Q1zGsmOGJL4Ua+/OGj1xY47H2JUGTa/wGZuuEGqsVC60imlZjfLOONZ7gteGWhEk0LlZs8klCr8ZqHURxTk58JGwiow9r/Ldt7f5yL9OM7GONxbasisrjlTDIz8FWoRmQLHq74yQ8equ3hRcXQ+hFfvTgMpuLdVyforELSRoG2exvsiBcJXA3gum85oko1wS54mnofQuQ8hS0FQluGuuWXZG9wlFjfRNcK7BlCR6vhK+BbfnhDQ9yCpMjXCHbQpHV31oHHx5pDG2Lj90XFGmeKRrmC9u2UFUQ3tS6/FtR/XUTBpUiJ/4AvNupVaCrjDsAAAAASUVORK5CYII=" sap2010:WorkflowViewState.IdRef="TargetApp_3" InformativeScreenshot="a2b709bd191576f3acea707e23103f14.png" Selector="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" Title="WhatsApp" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
